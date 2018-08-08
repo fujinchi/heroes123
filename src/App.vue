@@ -4,7 +4,10 @@
     <app-header></app-header>
     <div class="container-fluid">
       <div class="row">
-        <!-- 侧边导航栏 -->
+        <!-- 侧边导航栏 sidebar -->
+        <app-sidebar></app-sidebar>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <h2 class="sub-header">Hero List</h2>
         <a class="btn btn-success" href="add.html">Add</a>
         <div class="table-responsive">
           <table class="table table-striped">
@@ -223,11 +226,13 @@
 <script>
   // 导入 AppHeader.vue 头部组件
   import AppHeader from './components/AppHeader.vue';
+  import AppSidebar from './components/AppSidebar.vue';
   // ES6导入模块的语法
   export default {
     // 局部组件
     components: {
-      AppHeader
+      AppHeader,
+      AppSidebar
     }
   };
 </script>
