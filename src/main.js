@@ -7,6 +7,12 @@ import Vue from 'vue'
 // 导入 App.vue 组件
 import App from './App.vue'
 
+// 导入全局样式
+// 导入bootstrap
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+// 导入index.css
+import './assets/css/index.css';
+
 // 创建 Vue
 new Vue({
   // index.html中的 #app
